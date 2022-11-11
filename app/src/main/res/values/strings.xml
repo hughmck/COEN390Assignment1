@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="message_id">message</string>
+    <string name="settingsActivity">settings</string>
+    <string name="dataActivity">settings</string>
+    <string name="settings">settings</string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingsActivity">
+
+    <LinearLayout
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            />
+
+        <TextView
+            android:id="@+id/counterOneName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:text="Counter 1 Name" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/counterOneInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name goes here" />
+
+        <TextView
+            android:id="@+id/counterTwoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:text="Counter 2 Name" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/counterTwoInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="39dp"
+            android:hint="Name goes here" />
+
+        <TextView
+            android:id="@+id/counterThreeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="16dp"
+            android:text="Counter 3 Name" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/counterThreeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="1dp"
+            android:hint="Name goes here"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/maximumCounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="48dp"
+            android:text="Maximum Counts" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/maximumCountsInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:hint="Max counts goes here" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:text="Save" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
